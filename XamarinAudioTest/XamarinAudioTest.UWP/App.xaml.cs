@@ -61,7 +61,7 @@ namespace XamarinAudioTest.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
                 //create the mediaElement
-                Player = new MediaElement();
+                Player = this.Resources["GlobalMedia"] as MediaElement;
                 
                 Xamarin.Forms.Forms.Init(e);
 
