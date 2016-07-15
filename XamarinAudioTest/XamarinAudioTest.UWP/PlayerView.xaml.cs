@@ -28,7 +28,8 @@ namespace XamarinAudioTest.UWP
             //MediaElement will silently fail if not added to the visual tree. 
             myGrid.Children.Add(m);
 
-            m.Source = new Uri("http://www.westhuntsville.org/Audio/Uploaded/TestFile.mp3");//new Uri("http://feedproxy.google.com/~r/WestHuntsville/feeds/current/~5/BXrnhyRj-c4/04032016-Sunday-AM.mp3"); //// new Uri("http://15133.live.streamtheworld.com:3690/WGOWAM_SC");
+            //"https://1drv.ms/u/s!AkJlaLtUNZiig80Hiocg0xFEBQGtQg");//
+            m.Source = new Uri("http://www.westhuntsville.org/Audio/Uploaded/TestFile.mp3");
 
             m.Play();
         }
