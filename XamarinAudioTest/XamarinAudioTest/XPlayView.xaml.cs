@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace XamarinAudioTest
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+
+    public partial class XPlayView : ContentView
     {
-        public MainPage()
+        public XPlayView()
         {
             InitializeComponent();
-
-            //DependencyService.Get<IAudioPlayer>()
-            //    .PlayStream(new Uri("http://www.westhuntsville.org/Audio/Uploaded/TestFile.mp3"));
         }
     }
 }

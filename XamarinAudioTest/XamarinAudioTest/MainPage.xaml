@@ -4,8 +4,15 @@
              xmlns:local="clr-namespace:XamarinAudioTest"
              x:Class="XamarinAudioTest.MainPage">
 
-  <Label Text="Welcome to Xamarin Forms!"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+  
+  <ContentPage.Content>
+    <StackLayout x:Name="myLayout">
+      <Label Text="Welcome to Xamarin Forms!"
+              VerticalOptions="Center"
+              HorizontalOptions="Center" />
+
+      <local:XPlayView/>
+    </StackLayout>
+  </ContentPage.Content>
 
 </ContentPage>

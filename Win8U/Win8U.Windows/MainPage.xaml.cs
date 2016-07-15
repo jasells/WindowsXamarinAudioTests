@@ -22,13 +22,22 @@ namespace Win8U
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        MediaElement mediaElement;
+
         public MainPage()
         {
             this.InitializeComponent();
 
+            mediaElement = Application.Current.Resources["GlobalMedia"] as MediaElement;
+
+            Application.Current.Resources.Remove("GlobalMedia");
+
+            myGrid.Children.Add(mediaElement);
+
             mediaElement.Source = new Uri("http://www.westhuntsville.org/Audio/Uploaded/TestFile.mp3");//new Uri("http://feedproxy.google.com/~r/WestHuntsville/feeds/current/~5/BXrnhyRj-c4/04032016-Sunday-AM.mp3"); //// new Uri("http://15133.live.streamtheworld.com:3690/WGOWAM_SC");
 
             mediaElement.Play();
+
         }
     }
 }

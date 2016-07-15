@@ -62,7 +62,8 @@ namespace XamarinAudioTest.UWP
 
                 //create the mediaElement
                 Player = this.Resources["GlobalMedia"] as MediaElement;
-                
+                this.Resources.Remove("GlobalMedia");
+
                 Xamarin.Forms.Forms.Init(e);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)

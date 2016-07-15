@@ -7,8 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <MediaElement x:Name="mediaElement" HorizontalAlignment="Left" Height="100" Margin="116,417,0,0" VerticalAlignment="Top" Width="100"/>
+    <Grid x:Name="myGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!--<MediaElement x:Name="mediaElement" HorizontalAlignment="Left" Height="100" Margin="116,417,0,0" VerticalAlignment="Top" Width="100"/>-->
 
     </Grid>
 </Page>

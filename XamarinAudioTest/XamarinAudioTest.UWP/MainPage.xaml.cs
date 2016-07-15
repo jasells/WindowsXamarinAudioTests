@@ -22,6 +22,11 @@ namespace XamarinAudioTest.UWP
             this.InitializeComponent();
 
             LoadApplication(new XamarinAudioTest.App());
+
+            //var m = Application.Current.Resources["GlobalMedia"] as MediaElement;
+            //Application.Current.Resources.Remove("GlobalMedia");
+
+
         }
     }
 }
