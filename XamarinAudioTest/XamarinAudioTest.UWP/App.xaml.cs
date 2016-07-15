@@ -62,6 +62,9 @@ namespace XamarinAudioTest.UWP
 
                 //create the mediaElement
                 Player = this.Resources["GlobalMedia"] as MediaElement;
+                //this is the key! the element cannot be added to a visual tree if still 
+                //in the dictionary!
+                //will trow ex on XamarinAUdioTests.UWP.PlayerView.cs:29 if below line is removed
                 this.Resources.Remove("GlobalMedia");
 
                 Xamarin.Forms.Forms.Init(e);
